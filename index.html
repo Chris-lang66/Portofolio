@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d52c5c291e.js" crossorigin="anonymous"></script>
+    <title>Personal Portofolio Website</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/christian-high-resolution-logo-transparent (3).png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portofolio">Portofolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Développer Web</p>
+                <h1>Hi, I'm <span>Christian</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about-me.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel commodi odio voluptatem perspiciatis, 
+                        praesentium nesciunt provident doloremque quibusdam eveniet rerum atque quod dicta eos quis 
+                        quasi laborum quisquam temporibus officiis.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web development</span><br>Web app development</li>
+                            <li><span>Visual Studio Code</span><br>Écriture et modification de Code</li>
+                            <li><span>Tourneur-Fraiseur</span><br>Tournage précis au tour<br>Usinage de piéces au tour</li>
+                            <li><span>Langues</span><br>Courant: Italien - Tigrinya - Amharique <br>Intermediaire: Anglais - Français</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>19/08/24-07/08/24</span><br>NetPhone-Orleans</li>
+                            <li><span>13/05/24-24/05/24</span><br>Carrefour Express-Orleans</li>
+                            <li><span>08/01/24-19/01/24</span><br>Auchan Supermarche-St jean de Braye</li>
+                            <li><span>2018-2019</span><br>Tourneur Fraiseur-Asmara Erythrée</li>
+                            <li><span>07/2017-10/2019</span><br>Tourneur Fraiseur-Asmara Erythrée</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>15/04/24-26/02/25</span><br>École de la deuxiéme chance-Orleans</li>
+                            <li><span>04/06/24-21/06/24</span><br>Étincelle-ALTYOR St Cyr en Val</li>
+                            <li><span>27/11/23-21/02/24</span><br>Formation Fraçais langue etrangere-Via formation St Cyr en Val</li>
+                            <li><span>20/06/23-27/07/23</span><br>Visa 3 en 1-Emergence-Orleans</li>
+                            <li><span>2008-2019</span><br>École Alessandra "A Volta" Asmara Erythrée (École Italien)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- service -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Création Web</h2>
+                    <p>Je crée des sites web sur mesure, beaux et faciles à utiliser. Je vous accompagne à chaque étape,
+                     de la conception à la publication. Contactez-moi pour mettre votre activité en ligne!</p>
+                     <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Création de Logo</h2>
+                    <p>J'offre des services de création de logo personalisés pour représenter au mieux votre activité.
+                        Je travaille avce vous pour développer un design unique qui réflète l'identité de votre marque.</p>
+                     <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- portofolio -->
+
+     <div id="portofolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>E-commerce Website</h3>
+                        <p>Site web élégants et fonctionnels pour la vente de vêtements et chaussures etc,
+                           avec un design moderne et des achats sécurisés</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>E-commerce Website</h3>
+                        <p>Logos sur mesure pour divers clients, réflétant l'identité unique de chaque marque 
+                            avec style et professionnalisme.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+     </div>
+
+     <!-- contact -->
+
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> hananchrislove@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 0780525843</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/_chris.vale__/profilcard/?igsh=MWVqamwwbjFoanl4bw=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/christian-kibrom-27251b32a/"><i class="fa-brands fa-linkedin"></i></i></a>
+                    </div>
+                    <a href="images/cv_ck.pdf.lnk" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">Hello</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Christian.Portofolio 2024</p>
+        </div>
+     </div>
+
+
+    <script>
+        var tablinks= document.getElementsByClassName('tab-links');
+        var tabcontents= document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu =document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right= "0"
+        }
+        function closemenu(){
+            sidemenu.style.right= "-200px"
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz-Hya9Mp5TMwCNuuznkpSkuflX9GgpwaOqujfzO9GP_rFjToco2iH8RLyD_K-Gb6S5SA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
